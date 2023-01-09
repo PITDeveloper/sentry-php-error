@@ -1,14 +1,10 @@
 
-Fill out info in src/index.php with non redacted values then run:
-
-docker-compose up -d
-
-docker exec -it phpsentrytest bash
-
-/usr/local/bin/php -f /var/www/index.php
-
+ - Fill out info in src/index.php with non redacted values
+ - `docker-compose up -d`
+ - `docker exec -it phpsentrytest bash`
+ - Run `composer install`
+ - `/usr/local/bin/php -f /var/www/index.php`
+ 
 result:
-Segmentation fault (core dumped)
 
-
-
+    Segmentation fault (core dumped)
