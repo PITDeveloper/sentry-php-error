@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  latest:
+    container_name: phpsentrytest
+    build:
+      context: ./dockerfiles
+      dockerfile: latest
+    dns:
+      - 1.1.1.1
+    environment:
+      - TZ=America/New_York
+    privileged: true
+    volumes:
+      - ./src:/var/www
